@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card *ngFor="let item of items">
+    <img data src="http://what.pro/assets/img/artikel/{{ item.gambar}}"/>
+    <ion-card-title>
+      {{ item.judul}}
+    </ion-card-title>
+    <p [innerHTML]="item.deskripsi">
+      {{ item.deskripsi}}
+    </p>
+  </ion-card>
+</ion-content>
